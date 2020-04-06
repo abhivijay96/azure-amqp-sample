@@ -3,41 +3,32 @@
 
 ##### Install cmake tools
 
-    ```Shell
     apt-get install cmake build-essential
-    ```
+
 
 ##### Add azure-iot-sdk-c-dev package to the machine
     
-    ```Shell
     apt-get update
     apt-get install -y software-properties-common
     add-apt-repository ppa:aziotsdklinux/ppa-azureiot
     apt-get update
     apt-get install -y azure-iot-sdk-c-dev
-    ```
 
 ## Setting up CMake directories
     
-    ```Shell
     mkdir cmake
     cd cmake
     cmake ..
-    ```
 
 ## Building the application
 
-    ```Shell
     cd cmake
     make
-    ```
 
 ## Running the application
 
-    ```Shell
     cd cmake
     ./app
-    ```
 
 ### Miscellaneous
 
