@@ -6,17 +6,16 @@ set(AZUREIOT_INC_FOLDER ".." "/usr/include/azureiot" "/usr/include/azureiot/inc"
 
 include_directories(${AZUREIOT_INC_FOLDER})
 
-set(sample_application_c_files
-	./sample.c
+set(application_c_files
 	./main.c
 )
 
-set(sample_application_h_files
-	 ./sample.h)
+set(application_h_files
+	 ./models.h)
 	    
-add_executable(sample_app ${sample_application_c_files} ${sample_application_h_files})
+add_executable(app ${application_c_files} ${application_h_files})
 
-target_link_libraries(sample_app
+target_link_libraries(app
 		    serializer
 		    iothub_client
 		    iothub_client_amqp_transport
